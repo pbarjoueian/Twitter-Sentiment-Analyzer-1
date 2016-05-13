@@ -18,10 +18,19 @@ object Twitter {
     //features
     // filter out positive words only
 
-    def polarity(word: String): Int {
-      //read in file from dirLocation and return polarity of word from polarity.csv
-      val polarity = Int(1)
-    }
+   val data = sc.parallelize(Seq(
+  ("negative", "Hi I heard about Spark"),
+  ("negative", "I wish Java could use case classes"),
+  ("positive", "Logistic regression models are neat")
+))
+
+val polarity : Map[String,Int] = Map("good" -> 1, "bad" -> 0, "Hi" -> 5)
+val t = data.map( x => x._2.split(" "))
+.map(x => x.map(x => polarity.getOrElse(x,0)))
+.collect()
+
+data.persist()
+
  case class Twitter(status: String, location: String, time_stamp: Int) //case keyword makes class Twitter matchable
     def extractFeatures(tweet: String): Any = tweet match {
 
