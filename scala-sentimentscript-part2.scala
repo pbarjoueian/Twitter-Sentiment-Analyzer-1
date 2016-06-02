@@ -22,7 +22,7 @@
 	// extract features
 	val feat1 = tokens.length
 	val feat2 = max tokens 
-    val feat3 = tokens.tail
+    val feat3 = tokens.last
 
     // return LabelledPoint 
     LabelledPoint(feat1,feat2,feat3) 	
