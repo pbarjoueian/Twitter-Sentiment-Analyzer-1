@@ -1,5 +1,5 @@
  /* 
- This is a more sophisticated example of sentiment analyzer
+ This is a more sophisticated example of sentiment analyser
  we need the following files:
  - polarity.csv
  - negative.csv (containing negative tweets for training and testing )
