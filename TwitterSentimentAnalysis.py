@@ -1,8 +1,8 @@
 '''
     File name: TwitterSentimentAnalysis.py
     Maintainer: Dayne Sorvisto (Groundswell Group Inc)
-	Credits: Big Data Team: Groundswell Group Inc, Calgary AB
-	Email: dsorvisto@groundswellgroup.ca
+    Authors: Big Data Team: Groundswell Group Inc, Calgary AB
+    Email: dsorvisto@groundswellgroup.ca
     Date created: 08/01/2016
     Date last modified: 12/12/2016
     Python Version: 2.7
